@@ -445,19 +445,7 @@ class functions_advCop_1 {
 	limitToSides[] = {"WEST"};
 	color[] = {1,1,1,1};
 };
-/*
-class functions_hideBody {
-	displayName = "Hiding Bodies";
-	requiredPerkPoints = 8;
-	requiredLevel = 16;
-	requiredPerk = "";
-	subtitle = "Level 16 Required, 8 Perk Points";
-	description = "Gain the ability to hide the bodies of players you've killed";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_hidebody.sqf";
-	limitToSides[] = {};
-	color[] = {1,1,1,1};
-};
-*/
+
 class functions_relicReward {
 	displayName = "Quest: Collecting Relics";
 	requiredPerkPoints = 9999;
@@ -492,4 +480,65 @@ class functions_relicReward3 {
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_relicReward3.sqf";
 	limitToSides[] = {};
 	color[] = {0,0.46,0.76,1};
+};
+
+//Rebel perks
+class rebel_1 {
+	displayName = "Rebel Access";
+	requiredPerkPoints = 10;
+	requiredLevel = 2;
+	requiredPerk = "";
+	subtitle = "Level 2 Required, 10 Perk Points";
+	description = "Unlock Access to Level 1 Rebel Weapons, Clothing, and Market";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_rebel_1.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class rebel_2 {
+	displayName = "Rebel Apprentice";
+	requiredPerkPoints = 10;
+	requiredLevel = 8;
+	requiredPerk = "rebel_1";
+	subtitle = "Level 8 Required, 10 Perk Points";
+	description = "Unlock Access to Level 2 Rebel Weapons, Clothing, and Market";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_rebel_2.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class rebel_3 {
+	displayName = "Rebel Adept";
+	requiredPerkPoints = 10;
+	requiredLevel = 15;
+	requiredPerk = "rebel_2";
+	subtitle = "Level 15 Required, 10 Perk Points";
+	description = "Unlock Access to Level 3 Rebel Weapons, Clothing, and Market";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_rebel_3.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class rebel_4 {
+	displayName = "Rebel Expert";
+	requiredPerkPoints = 15;
+	requiredLevel = 25;
+	requiredPerk = "rebel_3";
+	subtitle = "Level 25 Required, 15 Perk Points";
+	description = "Unlock Access to Level 4 Rebel Weapons, Clothing, and Market";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_rebel_4.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class rebel_5 {
+	displayName = "Rebel Master";
+	requiredPerkPoints = 20;
+	requiredLevel = 35;
+	requiredPerk = "rebel_4";
+	subtitle = "Level 40 Required, 15 Perk Points";
+	description = "Unlock Access to Level 5 Rebel Weapons, Clothing, and Market";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_rebel_5.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
 };
