@@ -17,8 +17,8 @@ scriptName "fn_init";
 	life_currentExpLevel = 0;
 	life_currentExp = 0;
 	life_currentPerkPoints = 0;
-
-
+	mav_ttm_var_rebel = 0;
+	
 	// Wait until player is ready
 	waitUntil {player == player};
 

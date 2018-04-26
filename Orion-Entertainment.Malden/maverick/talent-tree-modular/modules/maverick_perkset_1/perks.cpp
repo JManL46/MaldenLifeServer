@@ -62,9 +62,9 @@ class perk_gunsspecialist_lessRecoil_5 {
 class perk_weaponSway_1 {
 	displayName = "Weapon Sway Control";
 	requiredPerkPoints = 5;
-	requiredLevel = 7;
+	requiredLevel = 5;
 	requiredPerk = "";
-	subtitle = "Level 7 Required, 5 Perk Points";
+	subtitle = "Level 5 Required, 5 Perk Points";
 	description = "Learn to control weapons better with lower overall weapon sway<br/><br/><t color='#10FF45'>-15% less weapon sway</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_weaponSway_1.sqf";
 	limitToSides[] = {};
@@ -74,9 +74,9 @@ class perk_weaponSway_1 {
 class perk_weaponSway_2 {
 	displayName = "Weapon Sway Control 2";
 	requiredPerkPoints = 6;
-	requiredLevel = 17;
+	requiredLevel = 12;
 	requiredPerk = "perk_weaponSway_1";
-	subtitle = "Level 17 Required, 6 Perk Points";
+	subtitle = "Level 12 Required, 6 Perk Points";
 	description = "Learn to control weapons better with lower overall weapon sway<br/><br/><t color='#10FF45'>-25% less weapon sway</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_weaponSway_2.sqf";
 	limitToSides[] = {};
@@ -86,9 +86,9 @@ class perk_weaponSway_2 {
 class perk_weaponSway_3 {
 	displayName = "Weapon Sway Control 3";
 	requiredPerkPoints = 7;
-	requiredLevel = 28;
+	requiredLevel = 20;
 	requiredPerk = "perk_weaponSway_2";
-	subtitle = "Level 28 Required, 7 Perk Points";
+	subtitle = "Level 20 Required, 7 Perk Points";
 	description = "Learn to control weapons better with lower overall weapon sway<br/><br/><t color='#10FF45'>-40% less weapon sway</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_weaponSway_3.sqf";
 	limitToSides[] = {};
@@ -98,12 +98,73 @@ class perk_weaponSway_3 {
 class perk_weaponSway_4 {
 	displayName = "Weapon Sway Control 4";
 	requiredPerkPoints = 10;
-	requiredLevel = 40;
+	requiredLevel = 35;
 	requiredPerk = "perk_weaponSway_3";
-	subtitle = "Level 40 Required, 10 Perk Points";
+	subtitle = "Level 35 Required, 10 Perk Points";
 	description = "Learn to control weapons better with lower overall weapon sway<br/><br/><t color='#10FF45'>-55% less weapon sway</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_weaponSway_4.sqf";
 	limitToSides[] = {};
+	color[] = {1,1,1,1};
+};
+
+//Rebel perks
+class rebel_1 {
+	displayName = "Rebel Access";
+	requiredPerkPoints = 10;
+	requiredLevel = 4;
+	requiredPerk = "";
+	subtitle = "Level 4 Required, 10 Perk Points";
+	description = "Unlock Access to Level 1 Rebel Weapons, Clothing, and Market";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_rebel_1.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class rebel_2 {
+	displayName = "Rebel Apprentice";
+	requiredPerkPoints = 10;
+	requiredLevel = 8;
+	requiredPerk = "rebel_1";
+	subtitle = "Level 8 Required, 10 Perk Points";
+	description = "Unlock Access to Level 2 Rebel Weapons, Clothing, and Market";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_rebel_2.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class rebel_3 {
+	displayName = "Rebel Adept";
+	requiredPerkPoints = 10;
+	requiredLevel = 15;
+	requiredPerk = "rebel_2";
+	subtitle = "Level 15 Required, 10 Perk Points";
+	description = "Unlock Access to Level 3 Rebel Weapons, Clothing, and Market";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_rebel_3.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class rebel_4 {
+	displayName = "Rebel Expert";
+	requiredPerkPoints = 15;
+	requiredLevel = 25;
+	requiredPerk = "rebel_3";
+	subtitle = "Level 25 Required, 15 Perk Points";
+	description = "Unlock Access to Level 4 Rebel Weapons, Clothing, and Market";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_rebel_4.sqf";
+	limitToSides[] = {"CIV"};
+	color[] = {1,1,1,1};
+};
+
+class rebel_5 {
+	displayName = "Rebel Master";
+	requiredPerkPoints = 20;
+	requiredLevel = 35;
+	requiredPerk = "rebel_4";
+	subtitle = "Level 40 Required, 15 Perk Points";
+	description = "Unlock Access to Level 5 Rebel Weapons, Clothing, and Market";
+	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_rebel_5.sqf";
+	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
 };
 
@@ -135,9 +196,9 @@ class perk_paycheck_2 {
 class perk_paycheck_3 {
 	displayName = "Paycheck 3";
 	requiredPerkPoints = 6;
-	requiredLevel = 21;
+	requiredLevel = 20;
 	requiredPerk = "perk_paycheck_2";
-	subtitle = "Level 21 Required, 6 Perk Points";
+	subtitle = "Level 20 Required, 6 Perk Points";
 	description = "Receive more money on a paycheck<br/><br/><t color='#10FF45'>+75% more money per paycheck</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_paycheckIncrease_3.sqf";
 	limitToSides[] = {};
@@ -293,9 +354,9 @@ class perk_locksmith_5 {
 class functions_impoundSpeed_1 {
 	displayName = "Impounding";
 	requiredPerkPoints = 3;
-	requiredLevel = 9;
+	requiredLevel = 3;
 	requiredPerk = "";
-	subtitle = "Level 9 Required, 3 Perk Points";
+	subtitle = "Level 3 Required, 3 Perk Points";
 	description = "You can impound vehicles more efficiently<br/><br/><t color='#10FF45'>50% faster impounding</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_impoundSpeed_1.sqf";
 	limitToSides[] = {"WEST","INDEPENDENT"};
@@ -305,9 +366,9 @@ class functions_impoundSpeed_1 {
 class functions_impoundSpeed_2 {
 	displayName = "Impounding 2";
 	requiredPerkPoints = 5;
-	requiredLevel = 18;
+	requiredLevel = 10;
 	requiredPerk = "functions_impoundSpeed_1";
-	subtitle = "Level 18 Required, 5 Perk Points";
+	subtitle = "Level 10 Required, 5 Perk Points";
 	description = "You can impound vehicles more efficiently<br/><br/><t color='#10FF45'>100% faster impounding</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_impoundSpeed_2.sqf";
 	limitToSides[] = {"WEST","INDEPENDENT"};
@@ -317,9 +378,9 @@ class functions_impoundSpeed_2 {
 class functions_repairSpeed_1 {
 	displayName = "Repairing Speed";
 	requiredPerkPoints = 3;
-	requiredLevel = 7;
+	requiredLevel = 3;
 	requiredPerk = "";
-	subtitle = "Level 7 Required, 3 Perk Points";
+	subtitle = "Level 3 Required, 3 Perk Points";
 	description = "You can repair vehicles more efficiently<br/><br/><t color='#10FF45'>40% faster repairing</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairSpeed_1.sqf";
 	limitToSides[] = {};
@@ -329,9 +390,9 @@ class functions_repairSpeed_1 {
 class functions_repairSpeed_2 {
 	displayName = "Repairing Speed 2";
 	requiredPerkPoints = 4;
-	requiredLevel = 9;
+	requiredLevel = 6;
 	requiredPerk = "functions_repairSpeed_1";
-	subtitle = "Level 9 Required, 4 Perk Points";
+	subtitle = "Level 6 Required, 4 Perk Points";
 	description = "You can repair vehicles more efficiently<br/><br/><t color='#10FF45'>75% faster repairing</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairSpeed_2.sqf";
 	limitToSides[] = {};
@@ -341,36 +402,12 @@ class functions_repairSpeed_2 {
 class functions_repairInfinite_1 {
 	displayName = "Infinite Toolkits";
 	requiredPerkPoints = 6;
-	requiredLevel = 13;
+	requiredLevel = 10;
 	requiredPerk = "functions_repairSpeed_2";
-	subtitle = "Level 13 Required, 6 Perk Points";
+	subtitle = "Level 10 Required, 6 Perk Points";
 	description = "Learn to repair vehicles without losing your repair kit";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_repairInfinite_1.sqf";
 	limitToSides[] = {};
-	color[] = {1,1,1,1};
-};
-
-class functions_loadouts_1 {
-	displayName = "Police Loadouts";
-	requiredPerkPoints = 6;
-	requiredLevel = 10;
-	requiredPerk = "";
-	subtitle = "Level 10 Required, 6 Perk Points";
-	description = "Gain access to the police loadout menu to save your loadouts to re-buy them after!";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_loadouts_1.sqf";
-	limitToSides[] = {"WEST"};
-	color[] = {1,1,1,1};
-};
-//Rebel
-class functions_advReb {
-	displayName = "Advanced Rebel";
-	requiredPerkPoints = 67;
-	requiredLevel = 75;
-	requiredPerk = "";
-	subtitle = "Level 75 Required, 67 Perk Points";
-	description = "Gain access to the Advanced Rebel!";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_advReb.sqf";
-	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
 };
 //Perks
@@ -401,9 +438,9 @@ class perk_uranium_1 {
 class functions_air_1 {
 	displayName = "Aviation Training";
 	requiredPerkPoints = 2;
-	requiredLevel = 6;
+	requiredLevel = 3;
 	requiredPerk = "";
-	subtitle = "Level 6 Required, 2 Perk Points";
+	subtitle = "Level 3 Required, 2 Perk Points";
 	description = "Gain access to the air shops to buy aircraft";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_air_1.sqf";
 	limitToSides[] = {};
@@ -413,9 +450,9 @@ class functions_air_1 {
 class perk_gasrobbery_1 {
 	displayName = "Armed Robbery";
 	requiredPerkPoints = 6;
-	requiredLevel = 17;
+	requiredLevel = 8;
 	requiredPerk = "";
-	subtitle = "Level 17 Required, 6 Perk Points";
+	subtitle = "Level 8 Required, 6 Perk Points";
 	description = "Learn to intimidate gas station clerks and banks more efficiently<br/><br/><t color='#10FF45'>+50% faster robbing</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_gasrobbery_1.sqf";
 	limitToSides[] = {"CIV"};
@@ -425,9 +462,9 @@ class perk_gasrobbery_1 {
 class functions_home_1 {
 	displayName = "Home Ownership";
 	requiredPerkPoints = 5;
-	requiredLevel = 14;
+	requiredLevel = 10;
 	requiredPerk = "";
-	subtitle = "Level 14 Required, 5 Perk Points";
+	subtitle = "Level 10 Required, 5 Perk Points";
 	description = "Gain the ability to own your own house";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_home_1.sqf";
 	limitToSides[] = {"CIV"};
@@ -480,65 +517,4 @@ class functions_relicReward3 {
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_relicReward3.sqf";
 	limitToSides[] = {};
 	color[] = {0,0.46,0.76,1};
-};
-
-//Rebel perks
-class rebel_1 {
-	displayName = "Rebel Access";
-	requiredPerkPoints = 10;
-	requiredLevel = 2;
-	requiredPerk = "";
-	subtitle = "Level 2 Required, 10 Perk Points";
-	description = "Unlock Access to Level 1 Rebel Weapons, Clothing, and Market";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_rebel_1.sqf";
-	limitToSides[] = {"CIV"};
-	color[] = {1,1,1,1};
-};
-
-class rebel_2 {
-	displayName = "Rebel Apprentice";
-	requiredPerkPoints = 10;
-	requiredLevel = 8;
-	requiredPerk = "rebel_1";
-	subtitle = "Level 8 Required, 10 Perk Points";
-	description = "Unlock Access to Level 2 Rebel Weapons, Clothing, and Market";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_rebel_2.sqf";
-	limitToSides[] = {"CIV"};
-	color[] = {1,1,1,1};
-};
-
-class rebel_3 {
-	displayName = "Rebel Adept";
-	requiredPerkPoints = 10;
-	requiredLevel = 15;
-	requiredPerk = "rebel_2";
-	subtitle = "Level 15 Required, 10 Perk Points";
-	description = "Unlock Access to Level 3 Rebel Weapons, Clothing, and Market";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_rebel_3.sqf";
-	limitToSides[] = {"CIV"};
-	color[] = {1,1,1,1};
-};
-
-class rebel_4 {
-	displayName = "Rebel Expert";
-	requiredPerkPoints = 15;
-	requiredLevel = 25;
-	requiredPerk = "rebel_3";
-	subtitle = "Level 25 Required, 15 Perk Points";
-	description = "Unlock Access to Level 4 Rebel Weapons, Clothing, and Market";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_rebel_4.sqf";
-	limitToSides[] = {"CIV"};
-	color[] = {1,1,1,1};
-};
-
-class rebel_5 {
-	displayName = "Rebel Master";
-	requiredPerkPoints = 20;
-	requiredLevel = 35;
-	requiredPerk = "rebel_4";
-	subtitle = "Level 40 Required, 15 Perk Points";
-	description = "Unlock Access to Level 5 Rebel Weapons, Clothing, and Market";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_rebel_5.sqf";
-	limitToSides[] = {"CIV"};
-	color[] = {1,1,1,1};
 };
