@@ -471,18 +471,6 @@ class functions_home_1 {
 	color[] = {1,1,1,1};
 };
 
-class functions_advCop_1 {
-	displayName = "Advanced Police Training";
-	requiredPerkPoints = 10;
-	requiredLevel = 12;
-	requiredPerk = "";
-	subtitle = "Level 12 Required, 10 Perk Points";
-	description = "Gain the ability to access the advanced police weapons and vehicles";
-	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_advCop_1.sqf";
-	limitToSides[] = {"WEST"};
-	color[] = {1,1,1,1};
-};
-
 class functions_relicReward {
 	displayName = "Quest: Collecting Relics";
 	requiredPerkPoints = 9999;
