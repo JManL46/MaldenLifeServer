@@ -188,7 +188,7 @@ class Maverick_ConvoySidemission
 												{"codeCracker", 1},
 												{"BPowder", 22},
 												{"BTip", 19},
-												{"BShell", 1},
+												{"BShell", 11},
 												{"BPrimer", 17},
 												{"sight", 21},
 												{"trigger", 23},
