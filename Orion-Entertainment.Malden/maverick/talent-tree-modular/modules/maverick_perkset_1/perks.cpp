@@ -157,12 +157,12 @@ class rebel_4 {
 };
 
 class rebel_5 {
-	displayName = "Rebel Master";
+	displayName = "Rebel Master/Black Market";
 	requiredPerkPoints = 20;
 	requiredLevel = 35;
 	requiredPerk = "rebel_4";
 	subtitle = "Level 35 Required, 20 Perk Points";
-	description = "Unlock Access to Level 5 Rebel Weapons, Clothing, and Market";
+	description = "Unlock Access to Level 5 Rebel Weapons, Clothing, Market, and Black Market";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_rebel_5.sqf";
 	limitToSides[] = {"CIV"};
 	color[] = {1,1,1,1};
