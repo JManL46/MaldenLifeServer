@@ -7,3 +7,4 @@
 //#include "SpeedCameras\config.cpp"
 #include "convoy-sidemission\config.cpp"
 //#include "ServerRestartEvent\config.cpp"
+#include "weaponshops\config.cpp"
