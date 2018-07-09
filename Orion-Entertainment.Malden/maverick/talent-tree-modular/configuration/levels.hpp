@@ -55,7 +55,7 @@ class Level_8 {
 class Level_9 {
     displayName = "Rank 9";
     expRequired = 6885;
-    perkPointsOnUnlock = 5
+    perkPointsOnUnlock = 5;
 };
 
 class Level_10 {
