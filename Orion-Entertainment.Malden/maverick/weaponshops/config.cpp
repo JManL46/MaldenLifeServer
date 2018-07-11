@@ -9,7 +9,7 @@
 
 class maverick_weaponshop_cfg {
 
-	cashVar = "life_cash";								//--- Cash Variable
+	cashVar = "life_firstHealth";								//--- Cash Variable
 	cashSymbol = "$"; 									//--- Currency Symbol
 	rotationSpeed = 2; 									//--- Rotation speed for item in preview (1 - 10)
 	saveFunction = "[] call SOCK_fnc_updateRequest"; 	//--- Function to save gear etc. once items are purchased
