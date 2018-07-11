@@ -8,3 +8,4 @@
 #include "convoy-sidemission\functions.cpp"
 //#include "ServerRestartEvent\functions.cpp"
 #include "weaponshops\functions.cpp"
+#include "gui\functions\functions.cpp"
