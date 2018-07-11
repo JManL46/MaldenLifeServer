@@ -9,7 +9,7 @@
 
 class maverick_weaponshop_cfg {
 
-	cashVar = "life_cash";								//--- Cash Variable
+	cashVar = "life_firstHealth";								//--- Cash Variable
 	cashSymbol = "$"; 									//--- Currency Symbol
 	rotationSpeed = 2; 									//--- Rotation speed for item in preview (1 - 10)
 	saveFunction = "[] call SOCK_fnc_updateRequest"; 	//--- Function to save gear etc. once items are purchased
@@ -47,35 +47,53 @@ class maverick_weaponshop_cfg {
 	};
 
 	class shops {
-		class example_shop {
-			title = "Example Shop"; //--- Title of Shop
-			condition = "true"; 	//--- Condition to meet to access shop
+		class gun {
+			title = "Gun Shop"; //--- Title of Shop
+			condition = "side player == civilian"; 	//--- Condition to meet to access shop
 			simple = 0; 			//--- Type of GUI 0-Weapon View 1-No Weapon View
-			maxCart = 20; 			//--- Max Amount of Items in Shopping Cart
+			maxCart = 50; 			//--- Max Amount of Items in Shopping Cart
 
 			weapons[] = {
 				//--- item classname, price, condition, custom display name
-				{"srifle_DMR_01_F", 500, "true", "Test"},
-				{"srifle_EBR_F", 600, "true", "EBR"},
-				{"launch_RPG32_F", 500, "true", ""},
-				{"srifle_LRR_F", 600, "true", ""},
-				{"hgun_Pistol_heavy_01_MRD_F", 1300, "true", ""}
+				{"hgun_Rook40_F", 5000, "license_civ_gun1", ""},
+				{"hgun_Pistol_heavy_02_F", 7500, "license_civ_gun1", ""},
+				{"hgun_ACPC2_F", 15000, "license_civ_gun1", ""},
+				{"hgun_PDW2000_F", 20000, "license_civ_gun2", ""},
+				{"SMG_05_F", 25000, "license_civ_gun2", ""},
+				{"SMG_01_F", 30000, "license_civ_gun2", ""},
+				{"arifle_TRG21_F", 45000, "license_civ_gun3", ""},
+				{"arifle_Mk20_F", 45000, "license_civ_gun3", ""},
+				{"arifle_SPAR_01_blk_F", 140000, "license_civ_gun3", ""}
 			};
 
 			magazines[] = {
-				{"10Rnd_762x54_Mag", 10, "true", "Test Mag"},
-				{"20Rnd_762x51_Mag", 20, "true", "EBR Mag"}
+				{"30Rnd_9x21_Mag", 100, "", ""},
+				{"30Rnd_9x21_Mag", 100, "", ""},
+				{"30Rnd_9x21_Mag", 100, "", ""},
+				{"30Rnd_9x21_Mag", 100, "", ""},
+				{"30Rnd_9x21_Mag", 100, "", ""},
+				{"30Rnd_9x21_Mag", 100, "", ""},
+				{"30Rnd_9x21_Mag", 100, "", ""},
+				{"20Rnd_762x51_Mag", 100, "", ""}
 			};
 
 			attachments[] = {
-				{"optic_SOS", 50, "true", "Test Scope"},
-				{"muzzle_snds_B", 1500, "true", ""}
+				{"optic_Arco", 2500, "true", ""},
+				{"optic_Arco_blk_F", 2500, "true", ""},
+				{"optic_ERCO_blk_F", 2500, "true", ""},
+				{"optic_Holosight_blk_F", 2500, "true", ""},
+				{"optic_Holosight_smg_blk_F", 2500, "true", ""},
+				{"optic_MRCO", 2500, "true", ""},
+				{"optic_DMS", 10000, "true", ""},
+				{"acc_flashlight", 2500, "true", ""},
+				{"acc_flashlight_pistol", 2500, "true", ""},
+				{"bipod_01_F_blk", 2500, "true", ""}
 			};
 			
 			items[] = {
-				{"Binocular", 50, "true", ""},
-				{"NVGoggles", 100, "true", ""}, //--- NV goggles won't be shown on preview
-				{"U_O_GhillieSuit", 100, "true", ""} //--- Clothing can also be sold but isn't guaranteed to be previewed - just make sure override checkbox is used to override clothing on player
+				{"Binocular", 50, "", ""},
+				{"NVGoggles", 100, "", ""}, //--- NV goggles won't be shown on preview
+				{"U_O_GhillieSuit", 100, "", ""} //--- Clothing can also be sold but isn't guaranteed to be previewed - just make sure override checkbox is used to override clothing on player
 			};
 		};
 	};
