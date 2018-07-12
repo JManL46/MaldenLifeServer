@@ -4,6 +4,20 @@
 
     You're not allowed to use this file without permission from the author!
 ---------------------------------------------------------------------------*/
+class MAV_ctrlControlsGroupNoScrollbars: MAV_ctrlControlsGroup
+{
+	class VScrollbar: VScrollbar	{width = 0;};
+	class HScrollbar: HScrollbar	{height = 0;};
+};
+class MAV_ctrlControlsGroupNoHScrollbars: MAV_ctrlControlsGroup
+{
+	class HScrollbar: HScrollbar	{height = 0;};
+};
+class MAV_ctrlControlsGroupNoVScrollbars: MAV_ctrlControlsGroup
+{
+	class VScrollbar: VScrollbar	{width = 0;};
+};
+
 
 class MAV_guiWeaponShop {
 	idd = MAV_IDD_GUIWEAPONSHOP;
