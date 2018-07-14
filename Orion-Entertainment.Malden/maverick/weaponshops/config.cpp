@@ -253,21 +253,21 @@ class maverick_weaponshop_cfg {
 
 			weapons[] = {
 				//--- item classname, price, condition, custom display name
-				{"hgun_Pistol_heavy_01_F", 4000, "call life_coplevel >= 1", "$STR_W_items_StunPistol"},
+				{"hgun_Pistol_heavy_01_F", 3000, "call life_coplevel >= 1", "$STR_W_items_StunPistol"},
 				{"SMG_02_F", 3000, "call life_coplevel >= 1", "Sting Tazer"},
 				{"arifle_SDAR_F", 3000, "call life_coplevel >= 1", ""},
-				{"arifle_SPAR_01_blk_F", 650000, "call life_coplevel >= 2", ""},
-				{"arifle_MXC_Black_F", 650000, "call life_coplevel >= 2", ""},
-				{"arifle_MX_Black_F", 650000, "call life_coplevel >= 3", ""},
-				{"arifle_CTAR_blk_F", 650000, "call life_coplevel >= 3", ""},
-				{"arifle_MXM_Black_F", 650000, "call life_coplevel >= 4", ""},
-				{"SMG_01_F", 650000, "call life_coplevel >= 4", ""},
-				{"arifle_MX_SW_Black_F", 650000, "call life_coplevel >= 8", ""},
-				{"srifle_DMR_07_blk_F", 650000, "call life_coplevel >= 4", ""},
-				{"arifle_SPAR_03_blk_F", 650000, "call life_coplevel >= 5", ""},
-				{"arifle_AK12_F", 650000, "call life_coplevel >= 5", ""},
-				{"srifle_DMR_02_F", 650000, "call life_coplevel >= 6", ""},
-				{"srifle_DMR_03_F", 650000, "call life_coplevel >= 6", ""}
+				{"arifle_SPAR_01_blk_F", 3000, "call life_coplevel >= 2", ""},
+				{"arifle_MXC_Black_F", 3000, "call life_coplevel >= 2", ""},
+				{"arifle_MX_Black_F", 3000, "call life_coplevel >= 3", ""},
+				{"arifle_CTAR_blk_F", 3000, "call life_coplevel >= 3", ""},
+				{"arifle_MXM_Black_F", 3000, "call life_coplevel >= 4", ""},
+				{"SMG_01_F", 3000, "call life_coplevel >= 4", ""},
+				{"arifle_MX_SW_Black_F", 3000, "call life_coplevel >= 8", ""},
+				{"srifle_DMR_07_blk_F", 3000, "call life_coplevel >= 4", ""},
+				{"arifle_SPAR_03_blk_F", 3000, "call life_coplevel >= 5", ""},
+				{"arifle_AK12_F", 3000, "call life_coplevel >= 5", ""},
+				{"srifle_DMR_02_F", 3000, "call life_coplevel >= 6", ""},
+				{"srifle_DMR_03_F", 3000, "call life_coplevel >= 6", ""}
 			};
 
 			magazines[] = {
