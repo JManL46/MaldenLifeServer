@@ -97,6 +97,75 @@ class maverick_weaponshop_cfg {
 			};
 		};
 
+		class gang {
+			title = "Gang Shop"; //--- Title of Shop
+			condition = "side player == civilian"; 	//--- Condition to meet to access shop
+			simple = 0; 			//--- Type of GUI 0-Weapon View 1-No Weapon View
+			maxCart = 50; 			//--- Max Amount of Items in Shopping Cart
+
+			weapons[] = {
+				//--- item classname, price, condition, custom display name
+				{"hgun_Rook40_F", 5000, "true", ""},
+				{"hgun_Pistol_heavy_02_F", 7500, "true", ""},
+				{"hgun_ACPC2_F", 12000, "true", ""},
+				{"hgun_PDW2000_F", 18000, "true", ""},
+				{"SMG_05_F", 18000, "true", ""},
+				{"SMG_01_F", 20000, "true", ""},
+				{"arifle_TRG21_F", 25000, "true", ""},
+				{"arifle_Mk20_F", 25000, "true", ""},
+				{"arifle_SPAR_01_blk_F", 60000, "true", ""},
+				{"arifle_Katiba_F", 70000, "true", ""},
+				{"arifle_AKM_F", 100000, "true", ""}
+			};
+
+			magazines[] = {
+				{"20Rnd_556x45_UW_mag", 100, "true", ""},
+				{"20Rnd_650x39_Cased_Mag_F", 100, "true", ""},
+				{"30Rnd_45ACP_Mag_SMG_01", 100, "true", ""},
+				{"30Rnd_9x21_Mag", 100, "true", ""},
+				{"30Rnd_9x21_Mag_SMG_02", 100, "true", ""},
+				{"6Rnd_45ACP_Cylinder", 100, "true", ""},
+				{"9Rnd_45ACP_Mag", 100, "true", ""},
+				{"30Rnd_556x45_Stanag", 100, "true", ""},
+				{"20Rnd_556x45_UW_mag", 100, "true", ""},
+				{"30Rnd_580x42_Mag_F", 100, "true", ""},
+				{"30Rnd_65x39_caseless_mag", 100, "true", ""},
+				{"10Rnd_50BW_Mag_F", 50000, "true", ""},
+				{"150Rnd_556x45_Drum_Mag_F", 100, "true", ""},
+				{"200Rnd_556x45_Box_F", 100, "true", ""},
+				{"100Rnd_580x42_Mag_F", 100, "true", ""},
+				{"30Rnd_762x39_Mag_F", 100, "true", ""},
+				{"10Rnd_762x54_Mag", 100, "true", ""},
+				{"20Rnd_762x51_Mag", 100, "true", ""},
+				{"200Rnd_65x39_cased_Box", 100, "true", ""},
+				{"100Rnd_65x39_caseless_mag", 100, "true", ""},
+				{"10Rnd_93x64_DMR_05_Mag", 100, "true", ""},
+				{"10Rnd_338_Mag", 100, "true", ""},
+				{"150Rnd_762x54_Box", 100, "true", ""}
+			};
+
+			attachments[] = {
+				{"optic_Arco", 2500, "true", ""},
+				{"optic_Arco_blk_F", 2500, "true", ""},
+				{"optic_ERCO_blk_F", 2500, "true", ""},
+				{"optic_Holosight_blk_F", 2500, "true", ""},
+				{"optic_Holosight_smg_blk_F", 2500, "true", ""},
+				{"optic_MRCO", 2500, "true", ""},
+				{"optic_DMS", 10000, "true", ""},
+				{"acc_flashlight", 2500, "true", ""},
+				{"acc_flashlight_pistol", 2500, "true", ""},
+				{"bipod_01_F_blk", 2500, "true", ""}
+			};
+			
+			items[] = {
+				{"Binocular", 50, "true", ""},
+				{"NVGoggles_OPFOR", 100, "true", ""},		
+				{"B_AssaultPack_khk", 7500, "true", ""},
+				{"B_Carryall_oli", 2000, "true", ""}	
+			
+			};
+		};
+
 		class rebel {
 			title = "Rebel Shop"; //--- Title of Shop
 			condition = "side player == civilian || mav_ttm_var_rebel > 0"; 	//--- Condition to meet to access shop
