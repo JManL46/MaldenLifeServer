@@ -7,14 +7,14 @@ class Maverick_ConvoySidemission
 {
 	class Config
 	{
-		ConfigPool[] 							= {"goldenbarz3Transport"};
+		ConfigPool[] 							= {"goldenbarz3Transport","WeaponTransport"};
 		ForceConfigAtIndex 						= 1;
 		SleepTime								= 5000;
 		MakePlayersHostileFor					= 300;
 		TimeoutBetweenMarkers					= 300;
 		SidesNotAttackable[]					= {"west","independent"};
 		AIDifficulty[] = {
-												{"aimingAccuracy", 0.8},
+												{"aimingAccuracy", 0.6},
 												{"aimingShake", 1},
 												{"aimingSpeed", 1},
 												{"endurance", 1},
@@ -74,8 +74,8 @@ class Maverick_ConvoySidemission
 			class Vehicles
 			{
 				// Vehicle configuration
-				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","O_T_Truck_03_ammo_ghex_F","I_MRAP_03_F"};
-				vehiclesSpawnMarkersInOrder[]	= {"mav_convoy_spawn1","mav_convoy_spawn2","mav_convoy_spawn3"};
+				vehiclesInOrder[]				= {"B_G_Offroad_01_armed_F","B_T_MRAP_01_F","O_T_Truck_03_ammo_ghex_F","B_G_Offroad_01_armed_F","B_G_Offroad_01_AT_F"};
+				vehiclesSpawnMarkersInOrder[]	= {"mav_wconvoy_spawn1","mav_wconvoy_spawn2","mav_wconvoy_spawn3","mav_wconvoy_spawn4","mav_wconvoy_spawn5"};
 				vehiclesInheritDirection		= 1;
 				mainVehicleAtIndex				= 1;
 				maxSpeed						= 60;
@@ -86,9 +86,9 @@ class Maverick_ConvoySidemission
 			class Route
 			{
 				// Route configuration
-				markers[] 						= {"mav_convoy_waypoint_1","mav_convoy_waypoint_2","mav_convoy_waypoint_3","mav_convoy_waypoint_4","mav_convoy_waypoint_5","mav_convoy_waypoint_6",
-				"mav_convoy_waypoint_7","mav_convoy_waypoint_8","mav_convoy_waypoint_9","mav_convoy_waypoint_10","mav_convoy_waypoint_11","mav_convoy_waypoint_12","mav_convoy_waypoint_13","mav_convoy_waypoint_14",
-				"mav_convoy_waypoint_15","mav_convoy_waypoint_16"};
+				markers[] 						= {"mav_wconvoy_waypoint_1","mav_wconvoy_waypoint_2","mav_wconvoy_waypoint_3","mav_wconvoy_waypoint_4","mav_wconvoy_waypoint_5","mav_wconvoy_waypoint_6",
+				"mav_wconvoy_waypoint_7","mav_wconvoy_waypoint_8","mav_wconvoy_waypoint_9","mav_wconvoy_waypoint_10","mav_wconvoy_waypoint_11","mav_wconvoy_waypoint_12","mav_wconvoy_waypoint_13","mav_wconvoy_waypoint_14",
+				"mav_wconvoy_waypoint_15","mav_wconvoy_waypoint_16"};
 			};
 
 			class Loot
@@ -96,21 +96,18 @@ class Maverick_ConvoySidemission
 				type 							= "real";
 				container						= "B_CargoNet_01_ammo_F";
 				data[] = {						
-												{"optic_SOS", 4, "ITEM"},
+												{"optic_AMS", 1, "ITEM"},
 
-												{"srifle_DMR_05_tan_f", 1, "WEAPON"},											
-												{"10Rnd_93x64_DMR_05_Mag", 6, "MAGAZINE"},
+												{"srifle_EBR_F", 1, "WEAPON"},											
+												{"20Rnd_762x51_Mag", 3, "MAGAZINE"},
 
-												{"srifle_DMR_07_blk_F", 1, "WEAPON"},
-												{"20Rnd_650x39_Cased_Mag_F", 8, "MAGAZINE"},
+												{"arifle_MXM_F", 1, "WEAPON"},
 
-												{"srifle_DMR_02_camo_F", 1, "WEAPON"},
-												{"10Rnd_338_Mag", 7, "MAGAZINE"},
+												{"arifle_MX_SW_F", 1, "WEAPON"},
 
-												{"srifle_LRR_camo_F", 1, "WEAPON"},
-												{"7Rnd_408_Mag", 4, "MAGAZINE"},
-
-												{"B_Kitbag_mcamo", 3, "BACKPACK"}
+												{"arifle_SPAR_02_blk_F", 1, "WEAPON"},
+												
+												{"RPG7_F", 1, "MAGAZINE"}
 				};
 			};
 		};
