@@ -68,5 +68,3 @@ gps_core_init_done = false;
 gps_fakeNodes = ["gps_fakeNodes"] call misc_fnc_hashTable_create;
 
 [] call gps_core_fnc_mapRoutes; 
-
-systemChat "Loading all Scripts Added 12/08/2018";
