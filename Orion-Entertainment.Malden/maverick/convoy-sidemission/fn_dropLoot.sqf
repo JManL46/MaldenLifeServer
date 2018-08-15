@@ -29,16 +29,16 @@ if (_lootType == "real") exitWith {
 	{
 		diag_log "droploot";
 		if ((_x select 1) == "WEAPON") then {
-			mav_convoy_mainVehicle addWeaponCargoGlobal [_x select 0, _x select 1];
+			mav_convoy_mainVehicle addWeaponCargoGlobal [_x select 1, _x select 1];
 		};
 		if ((_x select 1) == "MAGAZINE") then {
-			mav_convoy_mainVehicle addMagazineCargoGlobal [_x select 0, _x select 1];
+			mav_convoy_mainVehicle addMagazineCargoGlobal [_x select 1, _x select 1];
 		};
 		if ((_x select 1) == "WEAPON") then {
-			mav_convoy_mainVehicle addItemCargoGlobal [_x select 0, _x select 1];
+			mav_convoy_mainVehicle addItemCargoGlobal [_x select 1, _x select 1];
 		};
 		if ((_x select 1) == "BACKPACK") then {
-			mav_convoy_mainVehicle addBackpackCargoGlobal [_x select 0, _x select 1];
+			mav_convoy_mainVehicle addBackpackCargoGlobal [_x select 1, _x select 1];
 		};
 	} forEach _loot;
 };
